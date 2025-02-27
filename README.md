@@ -19,14 +19,16 @@ This project does not include the Windows 95 startup sound, but you can view the
 ### Requirements
 - Windows 11
 - AutoHotkey v2.0+
-- A WAV file of your desired startup sound 
+- A WAV file of your desired startup sound  
+  - You can find classic Windows startup sounds for inspiration [here](https://www.winhistory.de/more/winstart/winstart_en.htm).
 
 ### Setup
-1. Download the script from [GitHub](https://github.com/bceenaeiklmr/StartupSound).
+1. Download the [script](https://github.com/bceenaeiklmr/StartupSound/blob/main/src/StartupSound.ahk).
 2. Place your desired WAV file in the same directory as the script.
 3. Edit `StartupSound.ahk` and change `file_name := "your_choosen_file.wav"` to your WAV file's name.
-4. Run `StartupSound.ahk` (it will prompt for admin access).
-5. Restart to test!
+4. (Optional) You can also configure the scheduled task via XML configuration. Check the script or documentation for more details.
+5. Run `StartupSound.ahk` (it will prompt for admin access).
+6. Restart to test!
 
 ## How It Works
 - The script uses AutoHotkey to create a scheduled task that plays your chosen WAV file when you log in.
